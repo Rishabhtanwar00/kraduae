@@ -15,34 +15,61 @@ const arr = [
 		name: 'Our Products',
 		data: [
 			{
-				id: '01',
-				name: 'Pipes',
-				to: '/products/pipes',
+				id: 1,
+				name: 'Piping Solutions',
+				subdata: [
+					{
+						id: '01',
+						name: 'Pipes',
+						to: '/products/pipes',
+					},
+					{
+						id: '02',
+						name: 'Fittings',
+						to: '/products/fittings',
+					},
+					{
+						id: '03',
+						name: 'Flanges',
+						to: '/products/flanges',
+					},
+					{
+						id: '04',
+						name: 'Valves',
+						to: '/products/valves',
+					},
+					{
+						id: '05',
+						name: 'Fastners',
+						to: '/products/fastners',
+					},
+					{
+						id: '06',
+						name: 'Gaskets',
+						to: '/products/gaskets',
+					},
+				],
 			},
 			{
-				id: '02',
-				name: 'Fittings',
-				to: '/products/fittings',
+				id: 2,
+				name: 'Scaffolding Products',
+				to: '/products/scaffolding-product',
 			},
 			{
-				id: '03',
-				name: 'Flanges',
-				to: '/products/flanges',
+				id: 3,
+				name: 'Plates & Structural Steel',
+				to: '/products/plates-structural-steel',
 			},
 			{
-				id: '04',
-				name: 'Valves',
-				to: '/products/valves',
+				id: 4,
+				name: 'Industrial Safety Products',
+				to: '/products/safety-product',
 			},
+
 			{
-				id: '05',
-				name: 'Fastners',
-				to: '/products/fastners',
-			},
-			{
-				id: '06',
-				name: 'Gaskets',
-				to: '/products/gaskets',
+				id: 5,
+				name: 'Industrial Machines & Tools',
+				to: '/products/tools-machines',
 			},
 		],
 	},
@@ -103,15 +130,32 @@ const Navbar = () => {
 									{navlink.name}
 									<div className='dropdown-content'>
 										<img src={DropdownSVG} alt='' className='dropdown-svg' />
-										{navlink.data.map((datalink) => (
-											<Link
-												key={datalink.id}
-												to={datalink.to}
-												style={{ textDecoration: 'none' }}
-											>
-												{datalink.name}
-											</Link>
-										))}
+										{navlink.data.map((datalink) =>
+											datalink.id === 1 ? (
+												<div className='dropdown1' key={datalink.id}>
+													{datalink.name}
+													<div className='dropdown-content1'>
+														{datalink.subdata.map((sublink) => (
+															<Link
+																key={sublink.id}
+																to={sublink.to}
+																style={{ textDecoration: 'none' }}
+															>
+																{sublink.name}
+															</Link>
+														))}
+													</div>
+												</div>
+											) : (
+												<Link
+													key={datalink.id}
+													to={datalink.to}
+													style={{ textDecoration: 'none' }}
+												>
+													{datalink.name}
+												</Link>
+											)
+										)}
 									</div>
 								</li>
 							) : (

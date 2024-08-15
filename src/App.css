@@ -147,11 +147,17 @@
 .links Link {
 	text-decoration: none;
 }
-.dropdown {
+.dropdown,
+.dropdown1 {
 	position: relative;
 	display: inline-block;
 	z-index: 10;
 	transition: all 0.5s ease-in-out;
+}
+.dropdown1 {
+	font-size: 17px !important;
+	padding: 12px 0 !important;
+	width: 100%;
 }
 .dropdown::before {
 	content: '▲';
@@ -161,17 +167,22 @@
 	transform: scale(0.8);
 	transition: all 0.5s ease-in-out;
 }
-.dropdown:hover::before {
+.dropdown1::before {
+	/* right: 0%; */
+}
+.dropdown:hover::before,
+.dropdown1:hover::before {
 	transform: scale(0.8) rotate(180deg);
 	transition: all 0.5s ease-in-out;
 }
-.dropdown-content {
+.dropdown-content,
+.dropdown-content1 {
 	display: none;
 	opacity: 0;
 	position: absolute;
 	background-color: #0e100f;
 	color: #fff;
-	width: 300px;
+	width: 250px;
 	height: fit-content;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	transition-delay: 0.3s;
@@ -183,29 +194,41 @@
 	text-align: left;
 	padding: 10px 0px;
 	border: 2.5px solid #fff;
-	left: -80px;
+	left: -50px;
 	text-align: center;
+}
+.dropdown-content1 {
+	left: 220px;
+	top: 0;
+	width: 180px;
 }
 .dropdown-svg {
 	height: 20px;
 	width: 50px;
 	position: absolute;
 	top: -18.5px;
-	left: 120px;
+	left: 100px;
 }
-.dropdown-content a {
+.dropdown-content a,
+.dropdown-content1 a {
 	color: #fff;
 	padding: 12px 0px;
 	text-decoration: none;
 	display: block;
 	width: 100%;
-	font-size: 18px;
+	font-size: 17px;
 }
-.dropdown-content a:hover {
+.dropdown-content1 a {
+	font-size: 16px;
+	padding: 10px 0;
+}
+.dropdown-content a:hover,
+.dropdown-content1 a:hover {
 	color: #00e5ff;
 	transition: 0.3s all ease-in-out;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown1:hover .dropdown-content1 {
 	display: block;
 	animation: revealAnimation 0.5s ease-out forwards;
 	animation-delay: 0.3s;
@@ -1070,7 +1093,7 @@
 }
 .product-page-title {
 	height: 150px;
-	width: 300px;
+	width: 350px;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.7);
 	position: absolute;
@@ -1080,6 +1103,7 @@
 	z-index: 3;
 	border-radius: 4px;
 	color: #00e5ff;
+	padding: 20px;
 }
 .product-page-title h1 {
 	font-family: 'Alegreya', serif;
@@ -1417,6 +1441,15 @@ tr th:nth-child(1) {
 tr td:hover {
 	background-color: #1e2530;
 	transition: all 0.5s ease-in-out;
+}
+.tools-table tr td:nth-child(1) {
+	background-color: #1e2530;
+	font-weight: 800;
+	color: #000;
+	font-size: 18px;
+	font-family: 'Alegreya', serif;
+	letter-spacing: 0.5px;
+	background-color: #51a6c0;
 }
 
 /*-------------------------- Fittings Page --------------------*/
@@ -2263,12 +2296,181 @@ tr td:hover {
 	font-size: 18px;
 	padding: 0 20px;
 }
-.benefits-container{
+.benefits-container {
 	flex-wrap: wrap;
 }
 .benefit-card {
 	animation: none;
 	margin: 20px;
+}
+
+.safety-tabs-container {
+	padding: 40px 2% 40px 5%;
+}
+.Tabs {
+	/* height: 100%; */
+	width: 100%;
+	display: flex;
+}
+
+.TabList {
+	max-width: 480px;
+	background: #263238;
+	list-style: none;
+	padding: 0;
+	text-align: right;
+	height: fit-content;
+}
+
+.TabPanel {
+	flex: 1;
+	display: none;
+	padding: 0 30px;
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+}
+.TabPanel.is-active {
+	display: block;
+	/* animation: showPanel 0.5s ease-in-out forwards; */
+}
+
+.Button {
+	display: inline-block;
+	width: 100%;
+	padding: 15px 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	font-family: 'Alegreya', serif;
+	/* transition: all 0.5s ease-in-out; */
+	letter-spacing: 1px;
+	position: relative;
+}
+.TabList .Tab:nth-child(4) .Button {
+	padding: 1px 0;
+}
+.tab-svg {
+	position: absolute;
+	height: 102%;
+	right: -29px;
+	top: -0.5px;
+	opacity: 0;
+	/* transition: all 0.5s ease-in-out; */
+}
+.Button:focus,
+.Button:hover {
+	outline: 0;
+	transition: all 0.5s ease-in-out;
+	background: #0091ea;
+}
+.Button:focus .tab-svg,
+.Button:hover .tab-svg {
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+.Tab.is-active .Button {
+	background: #0091ea;
+	transition: all 0.5s ease-in-out;
+}
+.Tab.is-active .tab-svg {
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+.tab-content {
+	width: 100%;
+}
+.tab-content h1 {
+	font-size: 24px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	font-weight: 800;
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	color: #0091ea;
+}
+.tab-section p {
+	/* max-width: 70%; */
+	margin-left: auto;
+	text-align: justify;
+	font-size: 16px;
+	letter-spacing: 0.3px;
+}
+.tab-section img {
+	height: 300px;
+	max-width: 300px;
+	transform: scale(0);
+	animation: scaleImage 0.5s ease-in-out forwards;
+}
+@keyframes scaleImage {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+.tab-section-last img {
+	height: 200px;
+}
+.tab-section-features {
+	margin-bottom: 20px;
+}
+.tab-section-features h2 {
+	font-size: 22px;
+	margin: 10px 0;
+	text-align: center;
+	letter-spacing: 0.8px;
+	font-family: 'Alegreya', serif;
+	font-weight: 800;
+}
+.tab-section-feature {
+	margin: 4px 0;
+}
+.tab-section-feature h3,
+.tab-section-features h3 {
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	font-family: 'Alegreya', serif;
+	color: #0091ea;
+	font-weight: 600;
+}
+.tab-section-feature h3 span {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Mulish', sans-serif;
+	font-weight: normal;
+	letter-spacing: 0.1px;
+}
+.tab-content-para {
+	font-size: 16px;
+	letter-spacing: 0.3px;
+	margin-top: 10px;
+}
+.tools-container {
+	padding: 0px 5% 40px;
+}
+.tools-container h3 {
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	font-family: 'Alegreya', serif;
+	color: #0091ea;
+	font-weight: 600;
+}
+.tools-container h3 span {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Mulish', sans-serif;
+	font-weight: normal;
+	letter-spacing: 0.3px;
+}
+
+@media screen and (max-width: 1200px) {
+	.tab-section {
+		flex-direction: column-reverse;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -2376,6 +2578,10 @@ tr td:hover {
 	} */
 	.dropdown::before {
 		right: -10px;
+	}
+	.dropdown-content1 {
+		left: 130px;
+		top: 15px;
 	}
 	.about-wrapper {
 		justify-content: center;
@@ -2547,6 +2753,30 @@ tr td:hover {
 		padding-top: 50px;
 		margin-right: 0;
 	}
+
+	.safety-tabs-container {
+		padding: 0px 20px 40px 20px;
+	}
+	.Tabs {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.tab-content {
+		margin: 50px 0;
+	}
+	.TabPanel {
+		padding: 0;
+	}
+	.tab-svg {
+		display: none;
+	}
+	.TabList {
+		display: none;
+	}
+	.TabPanel {
+		display: block;
+	}
 }
 @media screen and (max-width: 600px) {
 	.industries-section {
@@ -2712,6 +2942,7 @@ tr td:hover {
 		margin-left: 0;
 	}
 }
+
 @media screen and (max-width: 519px) {
 	.routes-container {
 		/* margin-top: 229.2px; */
