@@ -34,7 +34,7 @@ xmlns='http://www.w3.org/2000/svg'
 >
 <path
     d='M1.50001 2C1.50001 2 36 29 36 44C36 59 1.50001 87 1.50001 87'
-    stroke='#0091ea'
+    stroke='#fff'
     strokeWidth='3'
 />
 </svg></button>;

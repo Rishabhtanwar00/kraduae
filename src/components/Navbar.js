@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '../assets/kgtlogo.png';
+import Logo from '../assets/KU.png';
 import { HiMail } from 'react-icons/hi';
 import { BiSolidPhoneCall } from 'react-icons/bi';
 import DropdownSVG from '../assets/notchupper.svg';

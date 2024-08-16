@@ -2,6 +2,15 @@ import { useEffect } from 'react';
 import ToolsBG from '../assets/toolsbg.png';
 import NotchSVG from '../assets/notchleft.svg';
 import DocumentTitle from '../components/DocumentTitle';
+import Machine1 from '../assets/machine.png';
+import Machine2 from '../assets/machine1.png';
+import Machine3 from '../assets/machine2.png';
+import Machine4 from '../assets/machine3.png';
+import Machine5 from '../assets/machine4.png';
+import Machine6 from '../assets/machine5.png';
+import Machine7 from '../assets/machine6.webp';
+import Machine8 from '../assets/machine7.jpg';
+import Machine9 from '../assets/machine9.jpg';
 
 const ToolsMachinesPage = () => {
 	useEffect(() => {
@@ -351,6 +360,18 @@ const ToolsMachinesPage = () => {
 						</tr>
 					</tbody>
 				</table>
+			</div>
+			<h1 className='valves-title'>Tools and Machinery</h1>
+			<div className='machine-images flex-container'>
+				<img src={Machine1} alt='' />
+				<img src={Machine2} alt='' />
+				<img src={Machine3} alt='' />
+				<img src={Machine4} alt='' />
+				<img src={Machine5} alt='' />
+				<img src={Machine9} alt='' />
+				<img src={Machine6} alt='' />
+				<img src={Machine7} alt='' />
+				<img src={Machine8} alt='' />
 			</div>
 		</div>
 	);

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { BiSolidPhoneCall } from 'react-icons/bi';
 import { HiMail } from 'react-icons/hi';
-import Logo from '../assets/kgtlogo.png';
+import Logo from '../assets/KU.png';
 import Hamburger from '../assets/hamburger.svg';
 import { Link } from 'react-router-dom';
 import { useGSAP } from '@gsap/react';

@@ -18,6 +18,7 @@
 	inset: 0;
 	z-index: 10;
 	background-color: #0e100f;
+	border-bottom: 1px solid #00e5ff;
 }
 .mobile-navbar {
 	display: none;
@@ -923,6 +924,7 @@
 	width: 156px;
 }
 .hex-content .hex-content-inner {
+	width: 90%;
 	left: 50%;
 	margin: -3px 0 0 5px;
 	position: absolute;
@@ -935,11 +937,10 @@
 }
 .hex-content .icon {
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	line-height: 30px;
-	margin-bottom: 11px;
-	margin-left: 3px;
+	margin: 0 auto 5px;
 }
 .hex-content .icon img {
 	width: 100%;
@@ -1158,6 +1159,7 @@
 	white-space: nowrap;
 	position: relative;
 	border-right: 0;
+	border-radius: 5px 0px 0 5px;
 }
 .material-used-title img {
 	height: 40px;
@@ -1185,6 +1187,8 @@
 	text-align: center;
 	transition: all 0.5s ease-in-out;
 	font-weight: 600;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.4);
 }
 .material-used-content p:hover {
 	background-color: #51a6c0;
@@ -1270,6 +1274,7 @@
 	text-align: center;
 	border: 2px solid #1e2530;
 	transition: all 0.5s ease-in-out;
+	border-radius: 5px;
 }
 .industries-section-title:hover {
 	background-color: transparent;
@@ -1289,6 +1294,7 @@
 	letter-spacing: 2px;
 	text-align: center;
 	display: block;
+	border-radius: 5px;
 }
 .industries-card img {
 	height: 80px;
@@ -1553,6 +1559,8 @@ tr td:hover {
 	background-color: #1e2530;
 	overflow: hidden;
 	transition: all 0.8s ease-in-out;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.6);
 }
 .flanges-type-card-title {
 	display: block;
@@ -1716,7 +1724,8 @@ tr td:hover {
 	padding: 0 20px;
 	font-size: 16px;
 	letter-spacing: 1px;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border-radius: 5px;
 }
 .form-textarea {
 	height: 150px;
@@ -1728,7 +1737,7 @@ tr td:hover {
 	background-color: #1e2530;
 	color: #fff;
 	box-shadow: 0px 2px 5px 0px #51a6c0;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 .submit-button {
 	width: 450px;
@@ -1739,12 +1748,13 @@ tr td:hover {
 	color: #fff;
 	font-weight: 800;
 	letter-spacing: 1px;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border-radius: 5px;
 }
 .submit-button:hover {
 	background-color: #1e2530;
 	color: #51a6c0;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 /*-------------------------------Quality Safety Page--------------------------*/
@@ -1902,6 +1912,7 @@ tr td:hover {
 	position: relative;
 	background-color: #1e2530;
 	color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.4);
 }
 .quality-safety-card:hover .quality-safety-card-decor {
 	transform: translateX(0);
@@ -2169,7 +2180,7 @@ tr td:hover {
 	width: 720px;
 	flex-wrap: wrap;
 	margin-left: 40px;
-	gap: 1px;
+	gap: 2px;
 }
 .valves-type p {
 	padding: 10px 0;
@@ -2179,6 +2190,8 @@ tr td:hover {
 	/* background-color: #51a6c0;
 	color: #fff; */
 	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.6);
 }
 .fastners-para {
 	font-size: 18px;
@@ -2188,7 +2201,8 @@ tr td:hover {
 .fastners-types,
 .gaskets-types {
 	flex-wrap: wrap;
-	padding: 40px;
+	padding: 40px 5%;
+	gap: 10px;
 }
 .fastners-types p {
 	height: 180px;
@@ -2199,9 +2213,10 @@ tr td:hover {
 	border: 2px solid #fff;
 	border-radius: 10px;
 	background-color: #1e2530;
-	margin: 20px;
+	/* margin: 20px; */
 	padding: 75px 20px;
 	transition: all 0.5s ease-in-out;
+	box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.4);
 }
 .fastners-types p:hover {
 	background-color: #51a6c0;
@@ -2345,7 +2360,7 @@ tr td:hover {
 	font-weight: bold;
 	color: #fff;
 	font-family: 'Alegreya', serif;
-	/* transition: all 0.5s ease-in-out; */
+	border: 2px solid #263238;
 	letter-spacing: 1px;
 	position: relative;
 }
@@ -2353,10 +2368,11 @@ tr td:hover {
 	padding: 1px 0;
 }
 .tab-svg {
+	display: none;
 	position: absolute;
-	height: 102%;
+	height: 108%;
 	right: -29px;
-	top: -0.5px;
+	top: -1.9px;
 	opacity: 0;
 	/* transition: all 0.5s ease-in-out; */
 }
@@ -2373,6 +2389,7 @@ tr td:hover {
 }
 .Tab.is-active .Button {
 	background: #0091ea;
+	border: 2px solid #fff;
 	transition: all 0.5s ease-in-out;
 }
 .Tab.is-active .tab-svg {
@@ -2465,6 +2482,72 @@ tr td:hover {
 	font-family: 'Mulish', sans-serif;
 	font-weight: normal;
 	letter-spacing: 0.3px;
+}
+.machine-images {
+	padding: 40px 20px;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.machine-images img {
+	height: 250px;
+	max-width: 380px;
+}
+.material-info-cards {
+	padding: 40px 20px;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.material-info-card {
+	width: 400px;
+	height: 327px;
+	padding: 20px;
+	text-align: left;
+	border-radius: 5px;
+	box-shadow: 0px 2px 6px 0px rgba(255, 255, 255, 0.6);
+	background: linear-gradient(71deg, #1e2530, #15171a, #1e2530);
+	background-clip: padding-box;
+}
+.material-info-card h2 {
+	padding: 10px 20px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	margin: 0 0 10px 0;
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Alegreya', serif;
+	font-weight: 800;
+	letter-spacing: 0.8px;
+}
+.material-info-card p,
+.summary p {
+	font-size: 16px;
+	letter-spacing: 0.3px;
+}
+.material-info-card p span,
+.material-info-card h3,
+.summary p span {
+	font-size: 18px;
+	font-family: 'Alegreya', serif;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	margin: 5px 0;
+	color: #0091ea;
+}
+.material-info-card p span,
+.summary p span {
+	margin-right: 5px;
+}
+.material-info-card h3,
+.application-para {
+	margin: 10px 0 0px 0;
+}
+.summary {
+	padding: 0 0 40px 15%;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.summary p {
+	margin: 5px 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2940,6 +3023,16 @@ tr td:hover {
 	}
 	.features-title-card {
 		margin-left: 0;
+	}
+	.machine-images img {
+		max-width: 350px;
+	}
+	.material-info-card {
+		max-width: 400px;
+		height: fit-content;
+	}
+	.summary {
+		padding: 0 20px 40px 20px;
 	}
 }
 

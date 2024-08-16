@@ -18,9 +18,9 @@ const Homepage = () => {
 	const tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: '.homepage-container',
-			start: width > 900 ? '-10% center' : '-25% center',
+			start: width > 900 ? '-15% center' : '-25% center',
 			// endTrigger: '.end-trigger',
-			end: width > 900 ? '95% 100%' : '90% 100%',
+			end: width > 900 ? '90% 100%' : '90% 100%',
 			scrub: 1,
 		},
 	});

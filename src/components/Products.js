@@ -1,8 +1,8 @@
 import PipesImg from '../assets/pipes.png';
-import FittingsImg from '../assets/fittings.png';
-import FlangesImg from '../assets/flanges.png';
-import GasketsImg from '../assets/gaskets.png';
-import ValvesImg from '../assets/valves.png';
+import ScaffoldingImg from '../assets/scaffolding.png';
+import PlatesImg from '../assets/plates.png';
+import SafetyProductImg from '../assets/safetyproduct.png';
+import ToolsImg from '../assets/tools.png';
 import ProductsBG from '../assets/roundedlines.png';
 import { Link } from 'react-router-dom';
 import { useGSAP } from '@gsap/react';
@@ -17,22 +17,12 @@ const Products = ({ timeline }) => {
 
 	useGSAP(() => {
 		timeline && width > 900
-			? timeline
-					.from(
-						'.hexagon-item',
-						{
-							y: '200px',
-							stagger: 0.05,
-							ease: 'power3.out',
-							delay: 0.3,
-						},
-						'p1'
-					)
-					.from(
-						'.products-title',
-						{ scale: 0, ease: 'power3.out', delay: 0.3 },
-						'p1'
-					)
+			? timeline.from('.hexagon-item', {
+					y: '200px',
+					stagger: 0.05,
+					ease: 'power3.out',
+					delay: 0,
+			  })
 			: timeline
 					// .from('.products-title', { scale: 0, ease: 'power3.inOut',delay: '-0.5' })
 					.fromTo(
@@ -69,7 +59,7 @@ const Products = ({ timeline }) => {
 								<span className='icon'>
 									<img src={PipesImg} alt='' />
 								</span>
-								<span className='title'>Pipes</span>
+								<span className='title'>Piping Solutions</span>
 							</span>
 							<svg
 								viewBox='0 0 173.20508075688772 200'
@@ -96,12 +86,12 @@ const Products = ({ timeline }) => {
 							<div></div>
 							<div></div>
 						</div>
-						<Link to='/products/fittings' className='hex-content'>
+						<Link to='/products/scaffolding-product' className='hex-content'>
 							<span className='hex-content-inner'>
 								<span className='icon'>
-									<img src={FittingsImg} alt='' />
+									<img src={ScaffoldingImg} alt='' />
 								</span>
-								<span className='title'>Fittings</span>
+								<span className='title'>Scaffolding Products</span>
 							</span>
 							<svg
 								viewBox='0 0 173.20508075688772 200'
@@ -130,12 +120,15 @@ const Products = ({ timeline }) => {
 							<div></div>
 							<div></div>
 						</div>
-						<Link to='/products/flanges' className='hex-content'>
+						<Link
+							to='/products/plates-structural-steel'
+							className='hex-content'
+						>
 							<span className='hex-content-inner'>
 								<span className='icon'>
-									<img src={FlangesImg} alt='' />
+									<img src={PlatesImg} alt='' />
 								</span>
-								<span className='title'>Flanges</span>
+								<span className='title'>Plates & Structural Steel</span>
 							</span>
 							<svg
 								viewBox='0 0 173.20508075688772 200'
@@ -162,12 +155,12 @@ const Products = ({ timeline }) => {
 							<div></div>
 							<div></div>
 						</div>
-						<Link className='hex-content'>
+						<Link className='hex-content' to='/products/safety-product'>
 							<span className='hex-content-inner'>
 								<span className='icon'>
-									<img src={GasketsImg} alt='' />
+									<img src={SafetyProductImg} alt='' />
 								</span>
-								<span className='title'>Gaskets</span>
+								<span className='title'>Industrial Safety Products</span>
 							</span>
 							<svg
 								viewBox='0 0 173.20508075688772 200'
@@ -194,12 +187,12 @@ const Products = ({ timeline }) => {
 							<div></div>
 							<div></div>
 						</div>
-						<Link className='hex-content'>
+						<Link className='hex-content' to='/products/tools-machines'>
 							<span className='hex-content-inner'>
 								<span className='icon'>
-									<img src={ValvesImg} alt='' />
+									<img src={ToolsImg} alt='' />
 								</span>
-								<span className='title'>Valves</span>
+								<span className='title'>Industrial Tools & Machines</span>
 							</span>
 							<svg
 								viewBox='0 0 173.20508075688772 200'
