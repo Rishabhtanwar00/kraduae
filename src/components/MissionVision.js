@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const MissionVision = ({ timeline }) => {
 	const { width } = useWindowDimensions();
 	let container = useRef();
-	
+
 	useGSAP(() => {
 		timeline && width > 900
 			? timeline
@@ -21,7 +21,7 @@ const MissionVision = ({ timeline }) => {
 						{
 							opacity: 0,
 						},
-						{ opacity: 1, ease: 'power1.out', delay: 0.2, },
+						{ opacity: 1, ease: 'power1.out', delay: 0.2 },
 						'a2'
 					)
 					.from(
@@ -61,7 +61,7 @@ const MissionVision = ({ timeline }) => {
 						{ opacity: 1, ease: 'power1.out', delay: -0.5 }
 					)
 					.from('.vision-right', {
-						scale: 0,
+						scale: 1,
 						ease: 'power3.inOut',
 					});
 		ScrollTrigger.refresh();

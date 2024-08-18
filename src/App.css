@@ -2926,6 +2926,10 @@ tr td:hover {
 	.flanges-type-card:nth-child(2) {
 		margin-bottom: 10px;
 	}
+	.hexagon-menu-new .hexagon-item {
+		transform: none;
+		transform: rotate(30deg);
+	}
 	.hexagon-menu-top .hexagon-item:nth-last-child(1),
 	.hexagon-menu-top .hexagon-item:nth-last-child(2) {
 		transform: none;
@@ -2992,7 +2996,9 @@ tr td:hover {
 		justify-content: center;
 		align-items: center;
 	}
-
+	.footer-top-left {
+		margin: 0px 0;
+	}
 	.footer-top-middle-wrapper {
 		width: 100%;
 	}
@@ -3001,7 +3007,7 @@ tr td:hover {
 		align-items: flex-start;
 	}
 	.footer-top-middle {
-		margin: 30px 0;
+		margin: 30px 0 0 0;
 	}
 	.footer-services {
 	}
