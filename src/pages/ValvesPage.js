@@ -75,9 +75,9 @@ const ValvesPage = () => {
 				<img className='valves-section-img' src={ValvesImg} alt='' />
 			</div>
 			<h1 className='valves-title' style={{margin:'20px auto'}}>Our Range of Valves</h1>
-			<p className='valves-para fastners-para' style={{margin:'20px auto'}}>
+			{/* <p className='valves-para fastners-para' style={{margin:'20px auto'}}>
 				<span>Manual and Automated Valves:</span> MOV, SSV, ESDV and more
-			</p>
+			</p> */}
 			{/* <div className='industries-section'>
 				<div className='industries-section-title flex-container'>
 					<img src={IndustriesImg} alt='' />

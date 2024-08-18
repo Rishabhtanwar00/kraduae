@@ -61,7 +61,7 @@ const ContactUs = () => {
 							<img src={Image1} alt='' />
 							<div className='contactus-card-info'>
 								<h6>Give us a call</h6>
-								<p>971542919259</p>
+								<p>+971-542919259</p>
 							</div>
 						</button>
 						<button

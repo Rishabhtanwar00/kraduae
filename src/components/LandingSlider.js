@@ -164,7 +164,7 @@ const LandingSlider = () => {
 					<img src={slide.img} alt='' />
 					<div className='slider-info'>
 						<h2 className='slider-info-text' style={{ textAlign: 'center' }}>
-							{slide.desc}
+							We Serve
 						</h2>
 						<h2 className='slider-info-text'>{slide.title}</h2>
 					</div>

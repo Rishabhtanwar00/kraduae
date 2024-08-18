@@ -165,7 +165,7 @@ const Navbar = () => {
 							<i>
 								<BiSolidPhoneCall />
 							</i>
-							971542919259
+							+971-542919259
 						</button>
 						<button
 							className='nav-button nav-button1'
