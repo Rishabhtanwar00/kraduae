@@ -1,5 +1,4 @@
-import React from 'react';
-import Tabs from '../components/Tabs';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 import SafetyBG from '../assets/safetybg.png';
 import NotchSVG from '../assets/notchleft.svg';
@@ -13,18 +12,6 @@ import SafetyGlovesImg from '../assets/safetygloves.png';
 import SafetyGogglesImg from '../assets/safetygoggles.png';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-
-const TabList = ({ children }) => <ul className='TabList'>{children}</ul>;
-
-const Tab = ({ _onClick, _isActive, children }) => (
-	<li className={`Tab  ${_isActive ? 'is-active' : ''}`} onClick={_onClick}>
-		{children}
-	</li>
-);
-
-const TabPanel = ({ _isActive, children }) => (
-	<div className={`TabPanel  ${_isActive ? 'is-active' : ''}`}>{children}</div>
-);
 
 const Button = ({ children }) => (
 	<button className='Button'>
@@ -47,6 +34,7 @@ const Button = ({ children }) => (
 );
 
 const SafetyProductsPage = () => {
+	const [activeTab, setActiveTab] = useState(1);
 	useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
@@ -94,34 +82,55 @@ const SafetyProductsPage = () => {
 			</p>
 
 			<div className='safety-tabs-container'>
-				<Tabs selected={0}>
-					<TabList>
-						<Tab>
+				<div className='Tabs'>
+					<ul className='TabList'>
+						<li
+							className={`Tab ${activeTab === 1 && 'is-active'}`}
+							onClick={() => setActiveTab(1)}
+						>
 							<Button>Inherent Flame Retardant Coveralls (IFR Coverall)</Button>
-						</Tab>
-						<Tab>
+						</li>
+						<li
+							className={`Tab ${activeTab === 2 && 'is-active'}`}
+							onClick={() => setActiveTab(2)}
+						>
 							<Button>Flame Retardant Coverall (FR Coverall)</Button>
-						</Tab>
-						<Tab>
+						</li>
+						<li
+							className={`Tab ${activeTab === 3 && 'is-active'}`}
+							onClick={() => setActiveTab(3)}
+						>
 							<Button>General Purpose Cotton Coverall</Button>
-						</Tab>
-						<Tab>
+						</li>
+						<li
+							className={`Tab ${activeTab === 4 && 'is-active'}`}
+							onClick={() => setActiveTab(4)}
+						>
 							<Button className='button-tag'>
 								Safety Shoes for Construction and Oil/Petrochemical Industries
 							</Button>
-						</Tab>
-						<Tab>
+						</li>
+						<li
+							className={`Tab ${activeTab === 5 && 'is-active'}`}
+							onClick={() => setActiveTab(5)}
+						>
 							<Button>Head Protection - Safety Helmets</Button>
-						</Tab>
-						<Tab>
+						</li>
+						<li
+							className={`Tab ${activeTab === 6 && 'is-active'}`}
+							onClick={() => setActiveTab(6)}
+						>
 							<Button>Hand Protection - Safety Gloves</Button>
-						</Tab>
-						<Tab>
+						</li>
+						<li
+							className={`Tab ${activeTab === 7 && 'is-active'}`}
+							onClick={() => setActiveTab(7)}
+						>
 							<Button>Eye Protection – Safety Goggles</Button>
-						</Tab>
-					</TabList>
+						</li>
+					</ul>
 
-					<TabPanel>
+					<div className={`TabPanel ${activeTab === 1 && 'is-active'}`}>
 						<div className='tab-content'>
 							<h1>Inherent Flame Retardant Coveralls (IFR Coverall)</h1>
 							<div className='tab-section flex-container'>
@@ -231,9 +240,9 @@ const SafetyProductsPage = () => {
 								environments.
 							</p>
 						</div>
-					</TabPanel>
+					</div>
 
-					<TabPanel>
+					<div className={`TabPanel ${activeTab === 2 && 'is-active'}`}>
 						<div className='tab-content'>
 							<h1>Flame Retardant Coverall (FR Coverall)</h1>
 							<div className='tab-section flex-container'>
@@ -309,9 +318,9 @@ const SafetyProductsPage = () => {
 								</div>
 							</div>
 						</div>
-					</TabPanel>
+					</div>
 
-					<TabPanel>
+					<div className={`TabPanel ${activeTab === 3 && 'is-active'}`}>
 						<div className='tab-content'>
 							<h1>General Purpose Cotton Coverall</h1>
 							<div className='tab-section flex-container'>
@@ -378,9 +387,9 @@ const SafetyProductsPage = () => {
 								</div>
 							</div>
 						</div>
-					</TabPanel>
+					</div>
 
-					<TabPanel>
+					<div className={`TabPanel ${activeTab === 4 && 'is-active'}`}>
 						<div className='tab-content'>
 							<h1>
 								Safety Shoes for Construction and Oil/Petrochemical Industries
@@ -486,9 +495,9 @@ const SafetyProductsPage = () => {
 								</div>
 							</div>
 						</div>
-					</TabPanel>
+					</div>
 
-					<TabPanel>
+					<div className={`TabPanel ${activeTab === 5 && 'is-active'}`}>
 						<div className='tab-content'>
 							<h1>Head Protection - Safety Helmets</h1>
 							<div className='tab-section flex-container'>
@@ -597,9 +606,9 @@ const SafetyProductsPage = () => {
 								</div>
 							</div>
 						</div>
-					</TabPanel>
+					</div>
 
-					<TabPanel>
+					<div className={`TabPanel ${activeTab === 6 && 'is-active'}`}>
 						<div className='tab-content'>
 							<h1>Hand Protection - Safety Gloves</h1>
 							<div className='tab-section flex-container'>
@@ -709,9 +718,9 @@ const SafetyProductsPage = () => {
 								</div>
 							</div>
 						</div>
-					</TabPanel>
+					</div>
 
-					<TabPanel>
+					<div className={`TabPanel ${activeTab === 7 && 'is-active'}`}>
 						<div className='tab-content'>
 							<h1>Eye Protection – Safety Goggles</h1>
 							<div className='tab-section tab-section-last flex-container'>
@@ -783,8 +792,8 @@ const SafetyProductsPage = () => {
 								</div>
 							</div>
 						</div>
-					</TabPanel>
-				</Tabs>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
