@@ -95,9 +95,9 @@ const FastnersPage = () => {
 					</table>
 				</div>
 			</div>
-			<h1 className='valves-title' style={{ margin: 0 }}>
+			{/* <h1 className='valves-title' style={{ margin: 0 }}>
 				Customer Base
-			</h1>
+			</h1> */}
 			{/* <div className='industries-section'>
 				<div className='industries-card'>
 					<img src={IndustriesImg} alt='' />
