@@ -7,6 +7,8 @@ import ChannelImg from '../assets/channel.png';
 import AngleImg from '../assets/angle.png';
 import BarImg from '../assets/bar.png';
 import HollowSectionImg from '../assets/hollowsection.png';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const PlatesStructuralSteelPage = () => {
 	useEffect(() => {
@@ -15,16 +17,25 @@ const PlatesStructuralSteelPage = () => {
 	DocumentTitle(
 		'Steel Plates & Structural Steel Products - Krad Global General Trading'
 	);
+
+	useGSAP(() => {
+		gsap.from('.plates-landing', {
+			transform: 'scale(0)',
+			duration: 1,
+			ease: 'expo.out',
+		});
+	}, []);
+
 	return (
 		<div className='product-page-container'>
-			<div className='product-page-landing fastners-landing'>
+			<div className='product-page-landing plates-landing'>
 				<div className='product-bg1'></div>
 				<img src={PlatesBG} alt='' />
 				<div className='product-page-title flex-container'>
 					<h1>Steel Plates & Structural Steel</h1>
 				</div>
 			</div>
-			<div className='breadcrum'>
+			<div className='breadcrum plates-breadcrum'>
 				<div className='bredcrum-item'>
 					<span>Home</span>
 					<img src={NotchSVG} alt='' />

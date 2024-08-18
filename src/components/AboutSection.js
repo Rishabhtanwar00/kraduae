@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const AboutSection = ({ timeline }) => {
 	const container = useRef();
 	const { width } = useWindowDimensions();
-	
+
 	useGSAP(() => {
 		timeline && width > 900
 			? timeline
@@ -35,14 +35,14 @@ const AboutSection = ({ timeline }) => {
 			: timeline
 					.to('.about-heading-clone', {
 						width: '100%',
-						delay: -1,
+						delay: -1.5,
 					})
 					.fromTo(
 						'.about-text-para',
 						{
 							opacity: 0,
 						},
-						{ opacity: 1, stagger: 0.1, delay: '-0.7', ease: 'power3.inOut' }
+						{ opacity: 1, stagger: 0.1, delay: '-1', ease: 'power3.inOut' }
 					);
 		ScrollTrigger.refresh();
 	}, [timeline, container]);
@@ -60,10 +60,13 @@ const AboutSection = ({ timeline }) => {
 				<div className='about-text'>
 					<p className='about-text-para'>
 						Krad Global, stands as the premier supplier and distributor of a
-						diverse range of Engineering, Industrial and Construction products,
-						including Steel Pipes, Valves, Fittings, Flanges, Gaskets,
-						Fasteners, Casing & Tubing, Scaffolding, Structural Steel, Marine
-						Products, Electrical & Instruments Cables and Products and more.
+						diverse range of{' '}
+						<span>
+							Engineering, Industrial and Construction products, including Steel
+							Pipes, Valves, Fittings, Flanges, Gaskets, Fasteners, Casing &
+							Tubing, Scaffolding, Structural Steel, Marine Products, Electrical
+							& Instruments Cables and Products and more.
+						</span>
 						Based in <span>Dubai</span>, we serve a wide spectrum of industries
 						such as Oil & Gas, Petrochemical, Power, Water, and construction
 						sectors.

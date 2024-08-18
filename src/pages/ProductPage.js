@@ -2,12 +2,12 @@ import PipesBG from '../assets/pipesbg.jpg';
 import NotchSVG from '../assets/notchleft.svg';
 import MaterialImg from '../assets/material.png';
 import ProductRange from '../components/ProductRange';
-import IndustriesImg from '../assets/industries.png';
-import OilgasImg from '../assets/oilgas.png';
-import RefineryImg from '../assets/refinery.png';
-import PipelineImg from '../assets/pipeline.png';
-import DistillationImg from '../assets/distillation.png';
-import ShipbuildingImg from '../assets/shipbuilding.png';
+// import IndustriesImg from '../assets/industries.png';
+// import OilgasImg from '../assets/oilgas.png';
+// import RefineryImg from '../assets/refinery.png';
+// import PipelineImg from '../assets/pipeline.png';
+// import DistillationImg from '../assets/distillation.png';
+// import ShipbuildingImg from '../assets/shipbuilding.png';
 import CustomerbaseImg from '../assets/customerbase.png';
 import MissionImg from '../assets/mission.png';
 import QualityImg from '../assets/quality.png';
@@ -116,7 +116,7 @@ const ProductPage = () => {
 				</div>
 			</div>
 			<ProductRange />
-			<div className='industries-section pipes-industries' ref={container}>
+			{/* <div className='industries-section pipes-industries' ref={container}>
 				<div className='industries-section-title flex-container'>
 					<img src={IndustriesImg} alt='' />
 					<h1>Industries Served</h1>
@@ -141,7 +141,7 @@ const ProductPage = () => {
 					<img src={ShipbuildingImg} alt='' />
 					<h3>Shipbuilding, Heavy Industrial sectors</h3>
 				</div>
-			</div>
+			</div> */}
 			<div className='other-details flex-container'>
 				<div className='other-details-card pipe-other-card'>
 					<img src={CustomerbaseImg} alt='' />

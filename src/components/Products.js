@@ -3,6 +3,7 @@ import ScaffoldingImg from '../assets/scaffolding.png';
 import PlatesImg from '../assets/plates.png';
 import SafetyProductImg from '../assets/safetyproduct.png';
 import ToolsImg from '../assets/tools.png';
+import FenceImg from '../assets/fence.png';
 import ProductsBG from '../assets/roundedlines.png';
 import { Link } from 'react-router-dom';
 import { useGSAP } from '@gsap/react';
@@ -42,7 +43,7 @@ const Products = ({ timeline }) => {
 				<h1 className='products-title'>Our Products</h1>
 			</div>
 			<div className='hexagon-menu clear'>
-				<div className='hexagon-menu-top'>
+				<div className='hexagon-menu-new'>
 					<div className='hexagon-item'>
 						<div className='hex-item'>
 							<div></div>
@@ -75,6 +76,8 @@ const Products = ({ timeline }) => {
 							</svg>
 						</Link>
 					</div>
+				</div>
+				<div className='hexagon-menu-top'>
 					<div className='hexagon-item'>
 						<div className='hex-item'>
 							<div></div>
@@ -107,8 +110,6 @@ const Products = ({ timeline }) => {
 							</svg>
 						</Link>
 					</div>
-				</div>
-				<div className='hexagon-menu-bottom'>
 					<div className='hexagon-item'>
 						<div className='hex-item'>
 							<div></div>
@@ -144,6 +145,8 @@ const Products = ({ timeline }) => {
 							</svg>
 						</Link>
 					</div>
+				</div>
+				<div className='hexagon-menu-bottom'>
 					<div className='hexagon-item'>
 						<div className='hex-item'>
 							<div></div>
@@ -155,7 +158,7 @@ const Products = ({ timeline }) => {
 							<div></div>
 							<div></div>
 						</div>
-						<Link className='hex-content' to='/products/safety-product'>
+						<Link to='/products/safety-product' className='hex-content'>
 							<span className='hex-content-inner'>
 								<span className='icon'>
 									<img src={SafetyProductImg} alt='' />
@@ -193,6 +196,38 @@ const Products = ({ timeline }) => {
 									<img src={ToolsImg} alt='' />
 								</span>
 								<span className='title'>Industrial Tools & Machines</span>
+							</span>
+							<svg
+								viewBox='0 0 173.20508075688772 200'
+								height='200'
+								width='174'
+								version='1.1'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<path
+									d='M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z'
+									fill='#1e2530'
+								></path>
+							</svg>
+						</Link>
+					</div>
+					<div className='hexagon-item'>
+						<div className='hex-item'>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div className='hex-item'>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<Link className='hex-content' to='/products/chain-link-fence'>
+							<span className='hex-content-inner'>
+								<span className='icon'>
+									<img src={FenceImg} alt='' />
+								</span>
+								<span className='title'>Chain Link Fence System</span>
 							</span>
 							<svg
 								viewBox='0 0 173.20508075688772 200'

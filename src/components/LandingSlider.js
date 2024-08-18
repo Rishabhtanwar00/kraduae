@@ -11,7 +11,7 @@ const slidesData = [
 	{
 		id: 1,
 		title: 'Construction Industry',
-		desc: '',
+		desc: 'We Serve',
 		img: Image1,
 	},
 	{
@@ -163,8 +163,10 @@ const LandingSlider = () => {
 				<div className='landing-slide' key={slide.id}>
 					<img src={slide.img} alt='' />
 					<div className='slider-info'>
+						<h2 className='slider-info-text' style={{ textAlign: 'center' }}>
+							{slide.desc}
+						</h2>
 						<h2 className='slider-info-text'>{slide.title}</h2>
-						<p className='slider-info-text'>{slide.desc}</p>
 					</div>
 				</div>
 			))}

@@ -1,11 +1,11 @@
 import FlangesBG from '../assets/flangesbg.png';
 import NotchSVG from '../assets/notchleft.svg';
-import IndustriesImg from '../assets/industries.png';
-import OilgasImg from '../assets/oilgas.png';
-import RefineryImg from '../assets/refinery.png';
-import PipelineImg from '../assets/pipeline.png';
-import DistillationImg from '../assets/distillation.png';
-import ShipbuildingImg from '../assets/shipbuilding.png';
+// import IndustriesImg from '../assets/industries.png';
+// import OilgasImg from '../assets/oilgas.png';
+// import RefineryImg from '../assets/refinery.png';
+// import PipelineImg from '../assets/pipeline.png';
+// import DistillationImg from '../assets/distillation.png';
+// import ShipbuildingImg from '../assets/shipbuilding.png';
 import QualityImg from '../assets/quality.png';
 import MarketImg from '../assets/market.png';
 import ClientImg from '../assets/client.png';
@@ -168,7 +168,7 @@ const FlangesPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className='industries-section'>
+			{/* <div className='industries-section'>
 				<div className='industries-section-title flex-container'>
 					<img src={IndustriesImg} alt='' />
 					<h1>Industries Served</h1>
@@ -193,7 +193,7 @@ const FlangesPage = () => {
 					<img src={ShipbuildingImg} alt='' />
 					<h3>Shipbuilding, Heavy Industrial sectors</h3>
 				</div>
-			</div>
+			</div> */}
 			<div className='other-details flanges-other flex-container'>
 				<div className='other-details-card flanges-other-card'>
 					<img src={MarketImg} alt='' />

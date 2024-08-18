@@ -1,19 +1,30 @@
 import { useEffect } from 'react';
 import GasketsBG from '../assets/gasketsbg.jpg';
 import NotchSVG from '../assets/notchleft.svg';
-import IndustriesImg from '../assets/industries.png';
-import OilgasImg from '../assets/oilgas.png';
-import RefineryImg from '../assets/refinery.png';
-import PipelineImg from '../assets/pipeline.png';
-import DistillationImg from '../assets/distillation.png';
-import ShipbuildingImg from '../assets/shipbuilding.png';
+// import IndustriesImg from '../assets/industries.png';
+// import OilgasImg from '../assets/oilgas.png';
+// import RefineryImg from '../assets/refinery.png';
+// import PipelineImg from '../assets/pipeline.png';
+// import DistillationImg from '../assets/distillation.png';
+// import ShipbuildingImg from '../assets/shipbuilding.png';
 import DocumentTitle from '../components/DocumentTitle';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const GasketsPage = () => {
 	useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
 	DocumentTitle('Gaskets - Krad Global General Trading');
+
+	useGSAP(() => {
+		gsap.from('.gaskets-landing', {
+			transform: 'scale(0)',
+			duration: 1,
+			ease: 'expo.out',
+		});
+	}, []);
+
 	return (
 		<div className='product-page-container'>
 			<div className='product-page-landing gaskets-landing'>
@@ -108,7 +119,7 @@ const GasketsPage = () => {
 			<h1 className='valves-title' style={{ margin: 0 }}>
 				Customer Base
 			</h1>
-			<div className='industries-section'>
+			{/* <div className='industries-section'>
 				<div className='industries-card'>
 					<img src={IndustriesImg} alt='' />
 					<h3>Local and international clients</h3>
@@ -133,7 +144,7 @@ const GasketsPage = () => {
 					<img src={ShipbuildingImg} alt='' />
 					<h3>Shipbuilding, Heavy Industrial sectors</h3>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

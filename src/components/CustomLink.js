@@ -6,9 +6,9 @@ export const contactData = [
 	{
 		id: 1,
 		title: 'Call us',
-		text: '1-888-123-4567',
+		text: '971542919259',
 		icon: <BsFillTelephoneFill />,
-		url: 'tel:+18881234567',
+		url: 'tel:+971542919259',
 		color: 'blue',
 	},
 	{

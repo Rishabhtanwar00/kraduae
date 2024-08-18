@@ -1,22 +1,32 @@
-import ValvesBG from '../assets/valvesbg.png';
+import ValvesBG from '../assets/valvesbg.jpeg';
 import NotchSVG from '../assets/notchleft.svg';
 import ValvesImg from '../assets/valvesimg.png';
-import IndustriesImg from '../assets/industries.png';
-import OilgasImg from '../assets/oilgas.png';
-import RefineryImg from '../assets/refinery.png';
-import PipelineImg from '../assets/pipeline.png';
-import DistillationImg from '../assets/distillation.png';
-import ShipbuildingImg from '../assets/shipbuilding.png';
+// import IndustriesImg from '../assets/industries.png';
+// import OilgasImg from '../assets/oilgas.png';
+// import RefineryImg from '../assets/refinery.png';
+// import PipelineImg from '../assets/pipeline.png';
+// import DistillationImg from '../assets/distillation.png';
+// import ShipbuildingImg from '../assets/shipbuilding.png';
 import ValvesTypesImg from '../assets/valves.png';
 import { useEffect } from 'react';
 import DocumentTitle from '../components/DocumentTitle';
-
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const ValvesPage = () => {
-    useEffect(() => {
+	useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
 	DocumentTitle('Valves - Krad Global General Trading');
+
+	useGSAP(() => {
+		gsap.from('.valves-landing', {
+			transform: 'scale(0)',
+			duration: 1,
+			ease: 'expo.out',
+		});
+	}, []);
+
 	return (
 		<div className='product-page-container'>
 			<div className='product-page-landing valves-landing'>
@@ -68,7 +78,7 @@ const ValvesPage = () => {
 			<p className='valves-para'>
 				<span>Manual and Automated Valves:</span> MOV, SSV, ESDV and more
 			</p>
-			<div className='industries-section'>
+			{/* <div className='industries-section'>
 				<div className='industries-section-title flex-container'>
 					<img src={IndustriesImg} alt='' />
 					<h1>Industries Served</h1>
@@ -93,7 +103,7 @@ const ValvesPage = () => {
 					<img src={ShipbuildingImg} alt='' />
 					<h3>Shipbuilding, Heavy Industrial sectors</h3>
 				</div>
-			</div>
+			</div> */}
 			<div className='valves-types flex-container'>
 				<div className='industries-section-title flex-container valve-types-title'>
 					<img src={ValvesTypesImg} alt='' />

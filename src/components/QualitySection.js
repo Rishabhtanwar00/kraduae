@@ -7,8 +7,11 @@ gsap.registerPlugin(ScrollTrigger);
 const QualitySection = ({ timeline }) => {
 	const { width } = useWindowDimensions();
 	let container = useRef();
-	
+
 	useGSAP(() => {
+		gsap.to('.quality-heading-clone', {
+			width: '100%',
+		});
 		timeline && width > 900
 			? timeline
 					.to('.quality-heading-clone', {
@@ -39,14 +42,6 @@ const QualitySection = ({ timeline }) => {
 					.to('.quality-heading-clone', {
 						width: '100%',
 					})
-					.fromTo(
-						'.quality-header-para',
-						{
-							opacity: 0,
-						},
-						{ opacity: 1, ease: 'power1.out' },
-						'a1'
-					)
 					.fromTo(
 						'.card',
 						{

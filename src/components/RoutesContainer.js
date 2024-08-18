@@ -13,6 +13,7 @@ import ScaffoldingProductPage from '../pages/ScaffoldingProductPage';
 import SafetyProductsPage from '../pages/SafetyProductsPage';
 import ToolsMachinesPage from '../pages/ToolsMachinesPage';
 import PlatesStructuralSteelPage from '../pages/PlatesStructuralSteelPage';
+import FencePage from '../pages/FencePage';
 
 const RoutesContainer = () => {
 	return (
@@ -52,6 +53,11 @@ const RoutesContainer = () => {
 					exact
 					path='/products/plates-structural-steel'
 					element={<PlatesStructuralSteelPage />}
+				></Route>
+				<Route
+					exact
+					path='/products/chain-link-fence'
+					element={<FencePage />}
 				></Route>
 				<Route exact path='/quality-safety' element={<QualitySafety />}></Route>
 				<Route exact path='/contact-us' element={<ContactUs />}></Route>

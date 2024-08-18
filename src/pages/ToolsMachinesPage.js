@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import ToolsBG from '../assets/toolsbg.png';
+import ToolsBG from '../assets/toolsbg.jpg';
 import NotchSVG from '../assets/notchleft.svg';
 import DocumentTitle from '../components/DocumentTitle';
 import Machine1 from '../assets/machine.png';
@@ -11,15 +11,26 @@ import Machine6 from '../assets/machine5.png';
 import Machine7 from '../assets/machine6.webp';
 import Machine8 from '../assets/machine7.jpg';
 import Machine9 from '../assets/machine9.jpg';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const ToolsMachinesPage = () => {
 	useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
 	DocumentTitle('Safety Products - Krad Global General Trading');
+
+	useGSAP(() => {
+		gsap.from('.tools-landing', {
+			transform: 'scale(0)',
+			duration: 1,
+			ease: 'expo.out',
+		});
+	}, []);
+
 	return (
 		<div className='product-page-container'>
-			<div className='product-page-landing fastners-landing'>
+			<div className='product-page-landing tools-landing'>
 				<div className='product-bg1'></div>
 				<img src={ToolsBG} alt='' />
 				<div className='product-page-title flex-container'>

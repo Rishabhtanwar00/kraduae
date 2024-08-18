@@ -11,6 +11,8 @@ import SafetyShoesImg from '../assets/safetyshoes.png';
 import SafetyHelmetImg from '../assets/safetyhelmet.png';
 import SafetyGlovesImg from '../assets/safetygloves.png';
 import SafetyGogglesImg from '../assets/safetygoggles.png';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const TabList = ({ children }) => <ul className='TabList'>{children}</ul>;
 
@@ -24,29 +26,43 @@ const TabPanel = ({ _isActive, children }) => (
 	<div className={`TabPanel  ${_isActive ? 'is-active' : ''}`}>{children}</div>
 );
 
-const Button = ({ children }) => <button className='Button'>{children} <svg
-className='tab-svg'
-width='38'
-height='89'
-viewBox='0 0 38 89'
-fill='#0091ea'
-xmlns='http://www.w3.org/2000/svg'
->
-<path
-    d='M1.50001 2C1.50001 2 36 29 36 44C36 59 1.50001 87 1.50001 87'
-    stroke='#fff'
-    strokeWidth='3'
-/>
-</svg></button>;
+const Button = ({ children }) => (
+	<button className='Button'>
+		{children}{' '}
+		<svg
+			className='tab-svg'
+			width='38'
+			height='89'
+			viewBox='0 0 38 89'
+			fill='#0091ea'
+			xmlns='http://www.w3.org/2000/svg'
+		>
+			<path
+				d='M1.50001 2C1.50001 2 36 29 36 44C36 59 1.50001 87 1.50001 87'
+				stroke='#0091ea'
+				strokeWidth='3'
+			/>
+		</svg>
+	</button>
+);
 
 const SafetyProductsPage = () => {
 	useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
 	DocumentTitle('Safety Products - Krad Global General Trading');
+
+	useGSAP(() => {
+		gsap.from('.safety-landing', {
+			transform: 'scale(0)',
+			duration: 1,
+			ease: 'expo.out',
+		});
+	}, []);
+
 	return (
 		<div className='product-page-container'>
-			<div className='product-page-landing fastners-landing'>
+			<div className='product-page-landing safety-landing'>
 				<div className='product-bg1'></div>
 				<img src={SafetyBG} alt='' />
 				<div className='product-page-title flex-container'>

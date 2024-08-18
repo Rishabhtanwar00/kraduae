@@ -77,6 +77,11 @@ const arr = [
 				name: 'Industrial Machines & Tools',
 				to: '/products/tools-machines',
 			},
+			{
+				id: 6,
+				name: 'Chain Link Fence System',
+				to: '/products/chain-link-fence',
+			},
 		],
 	},
 
@@ -129,22 +134,13 @@ const MobileNavbar = () => {
 			<div className='nav-slider-container flex-container'>
 				<div className='nav-slider'>
 					<p>
-						Timings : Mon - Sat 8.00 - 18.00 Sunday{' '}
-						<span className='status'>CLOSED</span> <span className='dot'></span>
-						&nbsp;&nbsp;&nbsp; Timings : Mon - Sat 8.00 - 18.00 Sunday{' '}
-						<span className='status'>CLOSED</span> <span className='dot'></span>
-						&nbsp;&nbsp;&nbsp; Timings : Mon - Sat 8.00 - 18.00 Sunday{' '}
-						<span className='status'>CLOSED</span> <span className='dot'></span>
-						&nbsp;&nbsp;&nbsp;
-					</p>
-					<p>
-						Timings : Mon - Sat 8.00 - 18.00 Sunday{' '}
-						<span className='status'>CLOSED</span> <span className='dot'></span>
-						&nbsp;&nbsp;&nbsp; Timings : Mon - Sat 8.00 - 18.00 Sunday{' '}
-						<span className='status'>CLOSED</span> <span className='dot'></span>
-						&nbsp;&nbsp;&nbsp; Timings : Mon - Sat 8.00 - 18.00 Sunday{' '}
-						<span className='status'>CLOSED</span> <span className='dot'></span>
-						&nbsp;&nbsp;&nbsp;
+						<span className='dot'></span>
+						&nbsp;&nbsp;&nbsp;KRAD GLOBAL&nbsp;
+						<span className='dot'></span>
+						&nbsp;&nbsp;&nbsp;KRAD GLOBAL&nbsp;
+						<span className='dot'></span>
+						&nbsp;&nbsp;&nbsp;KRAD GLOBAL&nbsp;
+						<span className='dot'></span>
 					</p>
 				</div>
 			</div>
@@ -159,12 +155,12 @@ const MobileNavbar = () => {
 			<div className='mobile-nav-buttons flex-container'>
 				<button
 					className='nav-button'
-					onClick={() => window.open('tel:+18881234567')}
+					onClick={() => window.open('tel:+971542919259')}
 				>
 					<i>
 						<BiSolidPhoneCall />
 					</i>
-					1-888-123-4567
+					971542919259
 				</button>
 				<button
 					className='nav-button nav-button1'

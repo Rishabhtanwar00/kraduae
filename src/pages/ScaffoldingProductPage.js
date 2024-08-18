@@ -3,9 +3,9 @@ import scaffoldingBG from '../assets/scaffoldingbg.png';
 import NotchSVG from '../assets/notchleft.svg';
 import UsesImg from '../assets/uses.png';
 import FeaturesImg from '../assets/features.png';
-import IndustriesImg from '../assets/industries.png';
-import RefineryImg from '../assets/refinery.png';
-import PipelineImg from '../assets/pipeline.png';
+// import IndustriesImg from '../assets/industries.png';
+// import RefineryImg from '../assets/refinery.png';
+// import PipelineImg from '../assets/pipeline.png';
 import CuplockStandardImg from '../assets/cuplockstandard.png';
 import CuplockLedgerImg from '../assets/cuplockledger.png';
 import CuplockTransomImg from '../assets/cuplocktransom.png';
@@ -22,15 +22,26 @@ import LadderClampImg from '../assets/ladderclamp.png';
 import BasePlateImg from '../assets/baseplate.png';
 import SpigotImg from '../assets/spigot.png';
 import DocumentTitle from '../components/DocumentTitle';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const ScaffoldingProductPage = () => {
 	useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
 	DocumentTitle('Scaffolding Product - Krad Global General Trading');
+
+	useGSAP(() => {
+		gsap.from('.scaffolding-landing', {
+			transform: 'scale(0)',
+			duration: 1,
+			ease: 'expo.out',
+		});
+	}, []);
+
 	return (
 		<div className='product-page-container'>
-			<div className='product-page-landing fastners-landing'>
+			<div className='product-page-landing scaffolding-landing'>
 				<div className='product-bg1'></div>
 				<img src={scaffoldingBG} alt='' />
 				<div className='product-page-title flex-container'>
@@ -135,7 +146,7 @@ const ScaffoldingProductPage = () => {
 					<p>Landing Towers</p>
 				</div>
 			</div>
-			<h1 className='valves-title' style={{ margin: 0 }}>
+			{/* <h1 className='valves-title' style={{ margin: 0 }}>
 				Industries
 			</h1>
 			<div className='industries-section'>
@@ -151,7 +162,7 @@ const ScaffoldingProductPage = () => {
 					<img src={PipelineImg} alt='' />
 					<h3>Power Plants</h3>
 				</div>
-			</div>
+			</div> */}
 			<div className='benefits-container flex-container'>
 			<div className='product-range-card benefit-card'>
 					<svg

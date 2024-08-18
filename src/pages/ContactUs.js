@@ -56,12 +56,12 @@ const ContactUs = () => {
 					<div className='contactus-cards'>
 						<button
 							className='contactus-card'
-							onClick={() => window.open('tel:+18881234567')}
+							onClick={() => window.open('tel:+971542919259')}
 						>
 							<img src={Image1} alt='' />
 							<div className='contactus-card-info'>
 								<h6>Give us a call</h6>
-								<p>1-888-123-4567</p>
+								<p>971542919259</p>
 							</div>
 						</button>
 						<button

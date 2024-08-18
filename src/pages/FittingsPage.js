@@ -1,11 +1,11 @@
 import FittingsBG from '../assets/fittingsbg.png';
 import NotchSVG from '../assets/notchleft.svg';
-import IndustriesImg from '../assets/industries.png';
-import OilgasImg from '../assets/oilgas.png';
-import RefineryImg from '../assets/refinery.png';
-import PipelineImg from '../assets/pipeline.png';
-import DistillationImg from '../assets/distillation.png';
-import ShipbuildingImg from '../assets/shipbuilding.png';
+// import IndustriesImg from '../assets/industries.png';
+// import OilgasImg from '../assets/oilgas.png';
+// import RefineryImg from '../assets/refinery.png';
+// import PipelineImg from '../assets/pipeline.png';
+// import DistillationImg from '../assets/distillation.png';
+// import ShipbuildingImg from '../assets/shipbuilding.png';
 import FittingsImg from '../assets/fittingsimg.png';
 import SpecialityImg from '../assets/speciality.png';
 import MissionImg from '../assets/mission.png';
@@ -140,7 +140,7 @@ const FittingsPage = () => {
 				</div>
 				<img className='fittings-types-img' src={FittingsImg} alt='' />
 			</div>
-			<div className='industries-section'>
+			{/* <div className='industries-section'>
 				<div className='industries-section-title flex-container'>
 					<img src={IndustriesImg} alt='' />
 					<h1>Industries Served</h1>
@@ -165,7 +165,7 @@ const FittingsPage = () => {
 					<img src={ShipbuildingImg} alt='' />
 					<h3>Shipbuilding, Heavy Industrial sectors</h3>
 				</div>
-			</div>
+			</div> */}
 			<div className='other-details fittings-other flex-container'>
 				<div className='other-details-card fittings-other-card'>
 					<img src={SpecialityImg} alt='' />

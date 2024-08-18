@@ -98,9 +98,9 @@ const QualitySafety = () => {
 			<div className='product-page-landing quality-page-landing'>
 				<div className='product-bg1'></div>
 				<img src={QualitysafetyBG} alt='' />
-				<div className='product-page-title flex-container'>
+				{/* <div className='product-page-title flex-container'>
 					<h1>Quality & Safety</h1>
-				</div>
+				</div> */}
 			</div>
 			<div className='breadcrum contact'>
 				<div className='bredcrum-item'>
