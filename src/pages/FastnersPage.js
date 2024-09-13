@@ -50,9 +50,9 @@ const FastnersPage = () => {
 				</div>
 			</div>
 			<p className='valves-para fastners-para'>
-				<span>Krad Global</span>, based in Dubai, UAE, stands as a prominent
-				leader in the field of Export and Supply of fasteners tailored to meet
-				diverse industry needs.
+				<span>Krad Global</span>, headquartered in Dubai, UAE and Present in USA,
+				India also, stands as a prominent leader in the field of Export and
+				Supply of fasteners tailored to meet diverse industry needs.
 			</p>
 			<h1 className='valves-title' style={{ margin: '20px 0' }}>
 				Fastner Types

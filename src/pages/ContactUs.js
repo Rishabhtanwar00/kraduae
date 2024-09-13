@@ -61,7 +61,15 @@ const ContactUs = () => {
 							<img src={Image1} alt='' />
 							<div className='contactus-card-info'>
 								<h6>Give us a call</h6>
-								<p>+971-542919259</p>
+								<p>
+									<span>Dubai Office:</span> +971-542919259
+								</p>
+								<p>
+									<span>USA Office:</span> &nbsp;&nbsp;&nbsp;+1 408-907-6909
+								</p>
+								<p>
+									<span>India Office:</span> &nbsp;+91-124-4048674
+								</p>
 							</div>
 						</button>
 						<button
@@ -88,8 +96,17 @@ const ContactUs = () => {
 							<div className='contactus-card-info'>
 								<h6>Visit us at </h6>
 								<p>
-									MOHAMED HAMED SAIF ALRUMHI BUILDING <br />
-									Office Number B 1-106, Al Mutheena, Deira Dubai - UAE
+									<span>Dubai Office:</span> MOHAMED HAMED SAIF ALRUMHI
+									BUILDING, Office Number B 1-106, Al Mutheena, Deira Dubai -
+									UAE
+								</p>
+								<p>
+									<span>USA Office:</span> 17662 Irvine Blvd Suite 9, Tustin, CA
+									92780
+								</p>
+								<p>
+									<span>India Office:</span> 272 GF, Sector 38, Gurugram,
+									Haryana, India 122001
 								</p>
 							</div>
 						</button>

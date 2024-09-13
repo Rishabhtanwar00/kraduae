@@ -139,8 +139,6 @@ const MobileNavbar = () => {
 						<span className='dot'></span>
 						&nbsp;&nbsp;&nbsp;KRAD GLOBAL&nbsp;
 						<span className='dot'></span>
-						&nbsp;&nbsp;&nbsp;KRAD GLOBAL&nbsp;
-						<span className='dot'></span>
 					</p>
 				</div>
 			</div>

@@ -55,14 +55,14 @@ const ValvesPage = () => {
 				<div className='valves-section'>
 					<p className='valves-section-para'>
 						<span>Krad Global</span> stands as your premier destination for a
-						comprehensive range of high-quality valves in Dubai. As renowned
-						Exporter and supplier, we offer a diverse selection including gate
-						valves, globe valves, check valves, ball valves, and butterfly
-						valves available in various materials such as carbon steel,
-						stainless steel, duplex, and specialized alloys. Serving as Exporter
-						and Supplier, our reach spans across the UAE, Gulf Countries and
-						African Market, making us your reliable partner for all valve
-						solutions.
+						comprehensive range of high-quality valves in Dubai, USA & India. As
+						renowned Exporter and supplier, we offer a diverse selection
+						including gate valves, globe valves, check valves, ball valves, and
+						butterfly valves available in various materials such as carbon
+						steel, stainless steel, duplex, and specialized alloys. Serving as
+						Exporter and Supplier, our reach spans across the UAE, Gulf
+						Countries and African Market, making us your reliable partner for
+						all valve solutions.
 					</p>
 					<p className='valves-section-para'>
 						Valves are critical Products for every Industries and Krad Global’s
@@ -74,7 +74,9 @@ const ValvesPage = () => {
 				</div>
 				<img className='valves-section-img' src={ValvesImg} alt='' />
 			</div>
-			<h1 className='valves-title' style={{margin:'20px auto'}}>Our Range of Valves</h1>
+			<h1 className='valves-title' style={{ margin: '20px auto' }}>
+				Our Range of Valves
+			</h1>
 			{/* <p className='valves-para fastners-para' style={{margin:'20px auto'}}>
 				<span>Manual and Automated Valves:</span> MOV, SSV, ESDV and more
 			</p> */}

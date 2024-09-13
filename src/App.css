@@ -52,6 +52,8 @@
 	max-width: 500px;
 	padding: 8px 20px;
 	display: flex;
+	align-items: center;
+	justify-content:center;
 	line-break: none;
 	cursor: pointer;
 	border-radius: 15px;
@@ -1645,7 +1647,7 @@ tr td:hover {
 .contactus-content > h1 {
 	font-size: 35px;
 	letter-spacing: 0.5px;
-	color: #51a6c0;
+	color: #0091ea;
 }
 .contactus-content > p {
 	font-size: 16px;
@@ -1659,7 +1661,8 @@ tr td:hover {
 	justify-content: flex-start;
 	flex-direction: row;
 	padding: 20px;
-	height: 130px;
+	min-height: 130px;
+	height: fit-content;
 	width: 500px;
 	border-top: 2px solid rgba(255, 255, 255, 0.5);
 	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
@@ -1681,8 +1684,16 @@ tr td:hover {
 }
 .contactus-card-info p {
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: 0.3px;
+	margin-bottom: 10px;
+}
+.contactus-card-info p span {
+	font-weight: 700;
+	color: #0091ea;
+	font-family: 'Alegreya', sans-serif;
+	letter-spacing: 0.5px;
+	font-size: 17px;
 }
 .contactus-form {
 	height: fit-content;
@@ -1697,7 +1708,7 @@ tr td:hover {
 	margin-bottom: 5px;
 }
 .contactus-form h1 span {
-	color: #51a6c0;
+	color: #0091ea;
 }
 .contactus-form p {
 	font-size: 16px;
@@ -1728,7 +1739,7 @@ tr td:hover {
 .form-input {
 	width: 450px;
 	height: 50px;
-	border: 2px solid #51a6c0;
+	border: 2px solid #0091ea;
 	background-color: #fff;
 	margin-top: 5px;
 	padding: 0 20px;
@@ -1746,14 +1757,14 @@ tr td:hover {
 .form-input:focus {
 	background-color: #1e2530;
 	color: #fff;
-	box-shadow: 0px 2px 5px 0px #51a6c0;
+	box-shadow: 0px 2px 5px 0px #0091ea;
 	transition: all 0.5s ease-in-out;
 }
 .submit-button {
 	width: 450px;
 	height: 50px;
-	border: 2px solid #51a6c0;
-	background-color: #51a6c0;
+	border: 2px solid #0091ea;
+	background-color: #0091ea;
 	font-size: 18px;
 	color: #fff;
 	font-weight: 800;
@@ -1763,7 +1774,7 @@ tr td:hover {
 }
 .submit-button:hover {
 	background-color: #1e2530;
-	color: #51a6c0;
+	color: #fff;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -2840,9 +2851,6 @@ tr td:hover {
 	}
 	.contactus-card {
 		width: 100%;
-	}
-	.contactus-card:nth-child(3) {
-		height: 200px;
 	}
 	.contactus-form-container {
 		padding-left: 0;

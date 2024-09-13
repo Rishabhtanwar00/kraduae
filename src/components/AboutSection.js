@@ -66,10 +66,11 @@ const AboutSection = ({ timeline }) => {
 							Pipes, Valves, Fittings, Flanges, Gaskets, Fasteners, Casing &
 							Tubing, Scaffolding, Structural Steel, Marine Products, Electrical
 							& Instruments Cables and Products and more.
-						</span>
-						Based in <span>Dubai</span>, we serve a wide spectrum of industries
-						such as Oil & Gas, Petrochemical, Power, Water, and construction
-						sectors.
+						</span>{' '}
+						We are a multinational corporation headquartered in{' '}
+						<span>Dubai</span> and Present in <span>USA, India</span> also, we
+						serve a wide spectrum of industries such as Oil & Gas,
+						Petrochemical, Power, Water, and construction sectors.
 					</p>
 					<p className='about-text-para'>
 						We take pride in offering high-quality products sourced from
