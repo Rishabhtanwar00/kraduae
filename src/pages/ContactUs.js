@@ -8,6 +8,13 @@ import DocumentTitle from '../components/DocumentTitle';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useEffect } from 'react';
+import {
+	FaFacebook,
+	FaInstagram,
+	FaLinkedin,
+	FaTwitter,
+	FaYoutube,
+} from 'react-icons/fa';
 
 const ContactUs = () => {
 	useEffect(() => {
@@ -65,7 +72,7 @@ const ContactUs = () => {
 									<span>Dubai Office:</span> +971-542919259
 								</p>
 								<p>
-									<span>USA Office:</span> &nbsp;&nbsp;&nbsp;+1 408-907-6909
+									<span>USA Office:</span> &nbsp;&nbsp;&nbsp;+1-408-907-6909
 								</p>
 								<p>
 									<span>India Office:</span> &nbsp;+91-124-4048674
@@ -110,6 +117,52 @@ const ContactUs = () => {
 								</p>
 							</div>
 						</button>
+						<div className='contactus-card contactus-card-social'>
+							<h3>Follow us on Social Media</h3>
+							<div className='social-icons'>
+								<button
+									onClick={() =>
+										window.open('https://www.youtube.com/@kradglobal')
+									}
+								>
+									<i>
+										<FaYoutube />
+									</i>
+								</button>
+								<button
+									onClick={() =>
+										window.open('https://www.facebook.com/kradglobal')
+									}
+								>
+									<i>
+										<FaFacebook />
+									</i>
+								</button>
+								<button
+									onClick={() =>
+										window.open('https://www.instagram.com/krad.global/')
+									}
+								>
+									<i>
+										<FaInstagram />
+									</i>
+								</button>
+								<button onClick={() => window.open('https://x.com/kradglobal')}>
+									<i>
+										<FaTwitter />
+									</i>
+								</button>
+								<button
+									onClick={() =>
+										window.open('https://www.linkedin.com/company/kradglobal/')
+									}
+								>
+									<i>
+										<FaLinkedin />
+									</i>
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className='contactus-form-container'>

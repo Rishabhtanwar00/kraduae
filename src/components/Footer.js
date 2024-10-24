@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CustomLink, { contactData } from './CustomLink';
 import { TbArrowBarRight } from 'react-icons/tb';
+import {
+	FaFacebook,
+	FaInstagram,
+	FaLinkedin,
+	FaTwitter,
+	FaYoutube,
+} from 'react-icons/fa';
+import { IoIosChatboxes } from 'react-icons/io';
 
 const ProductsData = [
 	{
@@ -158,6 +166,63 @@ const Footer = () => {
 								color={item.color}
 							/>
 						))}
+						<div className='footer-link' style={{ '--color': '#000' }}>
+							<div className='footer-link-icon' style={{ '--color': '#000' }}>
+								<i>
+									<IoIosChatboxes />
+								</i>
+							</div>
+							<div className='footer-link-text'>
+								<h5>Connect with us on Social media</h5>
+								<div className='contact-social-icons'>
+									<button
+										onClick={() =>
+											window.open('https://www.youtube.com/@kradglobal')
+										}
+									>
+										<i>
+											<FaYoutube />
+										</i>
+									</button>
+									<button
+										onClick={() =>
+											window.open('https://www.facebook.com/kradglobal')
+										}
+									>
+										<i>
+											<FaFacebook />
+										</i>
+									</button>
+									<button
+										onClick={() =>
+											window.open('https://www.instagram.com/krad.global/')
+										}
+									>
+										<i>
+											<FaInstagram />
+										</i>
+									</button>
+									<button
+										onClick={() => window.open('https://x.com/kradglobal')}
+									>
+										<i>
+											<FaTwitter />
+										</i>
+									</button>
+									<button
+										onClick={() =>
+											window.open(
+												'https://www.linkedin.com/company/kradglobal/'
+											)
+										}
+									>
+										<i>
+											<FaLinkedin />
+										</i>
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
