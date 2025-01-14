@@ -1,0 +1,8 @@
+# Force www and HTTPS in one go
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^kraduae\.netlify\.app [NC]
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^ https://www.kraduae.netlify.app%{REQUEST_URI} [L,R=301]
+</IfModule>
